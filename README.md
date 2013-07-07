@@ -22,7 +22,7 @@ git clone https://github.com/dplarson/salt-vagrant-demo.git
 - vagrant-salt
 - Ubuntu base box
 
-### 3. Start VM using Vagrant
+### 3. Start the virtual machine
 ```
 cd salt-vagrant-demo
 
@@ -31,4 +31,16 @@ vagrant up
 
 # log into VM
 vagrant ssh
+
 ```
+
+## The final result
+If everything ran successfully, then you now have a configured virtual machine
+with several packages installed and services running:
+
+- packages installed
+    - vim
+    - nginx
+
+- services running
+    - nginx
