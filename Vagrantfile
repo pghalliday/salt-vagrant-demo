@@ -2,7 +2,12 @@ Vagrant.configure("2") do |config|
   ## Choose your base box
   config.vm.box = "precise64"
 
-  ## For masterless, mount your file roots file root
+  ## For masterless, mount your file roots file root.
+  #
+  #  Usage: config.vm.synced_folder "source", "destination"
+  #    "source" = path to roots directory on the local system (outside VM)
+  #    "destination" = path to roots directory inside the VM
+  #
   config.vm.synced_folder "salt/roots/", "/srv/"
 
   ## Set your salt configs here
