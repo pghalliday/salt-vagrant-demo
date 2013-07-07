@@ -16,11 +16,21 @@ Easiest way is to clone the repo via git:
 git clone https://github.com/dplarson/salt-vagrant-demo.git
 ```
 
+
 ### 2. Install dependencies
-- salt
-- vagrant
-- vagrant-salt
-- Ubuntu base box
+
+#### Salt
+See http://docs.saltstack.com/topics/installation/index.html
+
+#### Vagrant
+``gem install vagrant`` or using one of the official packaged installs (http://www.vagrantup.com)
+
+#### Vagrant-Salt
+``vagrant plugin install vagrant-salt``
+
+#### Ubuntu 12.04 base box
+``vagrant box add precise64 http://files.vagrantup.com/precise64.box``
+
 
 ### 3. Start the virtual machine
 ```
@@ -33,6 +43,7 @@ vagrant up
 vagrant ssh
 
 ```
+
 
 ## The final result
 If everything ran successfully, then you now have a configured virtual machine
