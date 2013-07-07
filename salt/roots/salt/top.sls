@@ -4,3 +4,4 @@ base:
     - zsh
     - vim
     - nginx
+    - users
