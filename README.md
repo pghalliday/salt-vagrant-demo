@@ -33,7 +33,7 @@ See http://docs.saltstack.com/topics/installation/index.html
 
 
 ### 3. Start the virtual machine
-```
+```sh
 cd salt-vagrant-demo
 
 # start VM
@@ -41,7 +41,6 @@ vagrant up
 
 # log into VM
 vagrant ssh
-
 ```
 
 
@@ -52,6 +51,8 @@ with several packages installed and services running:
 - packages installed
     - vim
     - nginx
+    - git
+    - zsh
 
 - services running
     - nginx
